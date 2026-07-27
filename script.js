@@ -6,15 +6,15 @@
   // color a natural blueberry / red-cabbage / turmeric blend would show
   // across 9 slots, acidic -> basic
   const reactionColors = {
-    1: '#B0182C', // deep red
-    2: '#C8425A', // red-pink
-    3: '#D67088', // rose
-    4: '#C98FC0', // pink-lavender
-    5: '#8B6FB3', // violet (indicator's natural resting color)
-    6: '#5C6FBF', // blue-violet
-    7: '#3E7FA6', // blue-teal
-    8: '#4E8F5C', // green
-    9: '#C9A227'  // turmeric gold
+    1: '#E88E73',
+    2: '#E7A680',
+    3: '#E5B58A',
+    4: '#E2C598',
+    5: '#DCC79C',
+    6: '#BDAE75',
+    7: '#948A4A',
+    8: '#69652F',
+    9: '#5B5225' 
   };
 
   let dragging = false;
