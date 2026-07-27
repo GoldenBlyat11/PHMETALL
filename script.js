@@ -37,7 +37,14 @@
     homeParent = jar.parentNode;
     homeNext = jar.nextSibling;
 
+    const placeholder = document.createElement("div");
+    placeholder.style.width = rect.width + "px";
+    placeholder.style.height = rect.height + "px";
+    
+    homeParent.insertBefore(placeholder, jar);
     document.body.appendChild(jar);
+    
+    jar.placeholder = placeholder;
     jar.style.left = rect.left + 'px';
     jar.style.top = rect.top + 'px';
     jar.style.width = rect.width + 'px';
@@ -77,6 +84,14 @@
   }
 
   function endDrag(e){
+    if (homeNext) {
+      homeParent.insertBefore(jar, homeNext);
+    } else {
+      homeParent.appendChild(jar);
+    }
+    
+    jar.placeholder.remove();
+    jar.placeholder = null;
     if(!dragging) return;
     dragging = false;
     window.removeEventListener('mousemove', onMove);
