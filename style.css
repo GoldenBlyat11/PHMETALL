@@ -167,6 +167,25 @@ main{
   background:var(--line);
   margin:0 auto 2rem;
 }
+.info h3{
+  margin:1.6rem 0 0.4rem;
+  font-size:0.95rem;
+  letter-spacing:0.05em;
+  text-transform:uppercase;
+  color:var(--accent);
+}
+.info h3:first-child{ margin-top:0; }
+.info ol{
+  padding-left:1.4rem;
+  margin:0;
+}
+.info li{
+  margin-bottom:1rem;
+}
+.info em{
+  font-style:italic;
+  color:var(--steel-dark);
+}
 footer{
   text-align:center;
   padding:1.5rem;
