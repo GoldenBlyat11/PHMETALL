@@ -12,267 +12,392 @@
   <h1><span class="ph">pH</span>metall Industries</h1>
   <div class="tagline">Natural Indicator Division</div>
 </header>
+
+<nav class="tabs" id="tabs">
+  <button class="tab-btn active" data-tab="blend" type="button">Natural Blend</button>
+  <button class="tab-btn" data-tab="blueberry" type="button">Blueberry</button>
+  <button class="tab-btn" data-tab="cabbage" type="button">Red Cabbage</button>
+  <button class="tab-btn" data-tab="turmeric" type="button">Turmeric</button>
+  <button class="tab-btn" data-tab="recipes" type="button">Recipes</button>
+  <button class="tab-btn" data-tab="litreview" type="button">Literature Review</button>
+  <button class="tab-btn" data-tab="results" type="button">Results</button>
+  <button class="tab-btn" data-tab="references" type="button">References</button>
+</nav>
+
 <main>
 
-  <h2 class="section-title">Natural Blend</h2>
-  <div class="lab-area">
-    <div class="jar-wrap">
-      <div class="jar-slot">
-        <div class="jar" id="jar-blend">
-          <svg viewBox="0 0 70 90" xmlns="http://www.w3.org/2000/svg">
-            <rect x="10" y="18" width="50" height="62" rx="6" fill="rgba(255,255,255,0.15)" stroke="#444" stroke-width="2"/>
-            <rect x="13" y="34" width="44" height="44" rx="3" fill="#CF8C34" id="jarFluid-blend"/>
-            <rect x="16" y="8" width="38" height="12" rx="3" fill="#555"/>
-            <rect x="20" y="2" width="30" height="8" rx="2" fill="#333"/>
-          </svg>
+  <!-- ===================== NATURAL BLEND ===================== -->
+  <section class="tab-panel active" id="tab-blend">
+    <h2 class="section-title">Natural Blend</h2>
+    <div class="lab-area">
+      <div class="jar-wrap">
+        <div class="jar-slot">
+          <div class="jar" id="jar-blend">
+            <svg viewBox="0 0 70 90" xmlns="http://www.w3.org/2000/svg">
+              <rect x="10" y="18" width="50" height="62" rx="6" fill="rgba(255,255,255,0.15)" stroke="#444" stroke-width="2"/>
+              <rect x="13" y="34" width="44" height="44" rx="3" fill="#CF8C34" id="jarFluid-blend"/>
+              <rect x="16" y="8" width="38" height="12" rx="3" fill="#555"/>
+              <rect x="20" y="2" width="30" height="8" rx="2" fill="#333"/>
+            </svg>
+          </div>
         </div>
+        <div class="jar-label">Natural Indicator — drag onto the strip</div>
       </div>
-      <div class="jar-label">Natural Indicator — drag onto the strip</div>
-    </div>
-    <div>
-      <div class="strip" id="strip-blend">
-        <div class="slot" data-index="1" data-label="3"></div>
-        <div class="slot" data-index="2" data-label="4"></div>
-        <div class="slot" data-index="3" data-label="5"></div>
-        <div class="slot" data-index="4" data-label="6"></div>
-        <div class="slot" data-index="5" data-label="7"></div>
-        <div class="slot" data-index="6" data-label="8"></div>
-        <div class="slot" data-index="7" data-label="9"></div>
-        <div class="slot" data-index="8" data-label="10"></div>
-        <div class="slot" data-index="9" data-label="11"></div>
-      </div>
-      <div class="strip-caption">9-slot pH test strip</div>
-    </div>
-  </div>
-
-  <div class="divider"></div>
-  <p class="info">
-    Our indicator solution is a cold-steeped blend of <strong>blueberry extract</strong>,
-    <strong>red cabbage</strong>, and <strong>turmeric</strong>. Blueberries and red cabbage both
-    carry anthocyanins, pigments that shift from deep red through violet and blue as acidity drops,
-    albeit not as noticeable, due to the turmeric extract being way too powerful compared to others.
-    Turmeric contributes curcumin, which stays strong orange in acid but turns a deep red-brown once
-    a solution turns basic. Combined, the three plant extracts stretch the visible color change
-    across the full range of a 9-slot strip — dip it in, and each slot blooms into the shade that
-    matches its condition, without a single synthetic dye.
-  </p>
-
-  <div class="divider"></div>
-
-  <h2 class="section-title">Blueberry Extract</h2>
-  <div class="lab-area">
-    <div class="jar-wrap">
-      <div class="jar-slot">
-        <div class="jar" id="jar-blueberry">
-          <svg viewBox="0 0 70 90" xmlns="http://www.w3.org/2000/svg">
-            <rect x="10" y="18" width="50" height="62" rx="6" fill="rgba(255,255,255,0.15)" stroke="#444" stroke-width="2"/>
-            <rect x="13" y="34" width="44" height="44" rx="3" fill="#F2B8C6" id="jarFluid-blueberry"/>
-            <rect x="16" y="8" width="38" height="12" rx="3" fill="#555"/>
-            <rect x="20" y="2" width="30" height="8" rx="2" fill="#333"/>
-          </svg>
+      <div>
+        <div class="strip" id="strip-blend">
+          <div class="slot" data-index="1" data-label="3"></div>
+          <div class="slot" data-index="2" data-label="4"></div>
+          <div class="slot" data-index="3" data-label="5"></div>
+          <div class="slot" data-index="4" data-label="6"></div>
+          <div class="slot" data-index="5" data-label="7"></div>
+          <div class="slot" data-index="6" data-label="8"></div>
+          <div class="slot" data-index="7" data-label="9"></div>
+          <div class="slot" data-index="8" data-label="10"></div>
+          <div class="slot" data-index="9" data-label="11"></div>
         </div>
+        <div class="strip-caption">9-slot pH test strip</div>
       </div>
-      <div class="jar-label">Blueberry Extract — vanilla in acid, dark red in base</div>
     </div>
-    <div>
-      <div class="strip" id="strip-blueberry">
-        <div class="slot" data-index="1" data-label="3"></div>
-        <div class="slot" data-index="2" data-label="5"></div>
-        <div class="slot" data-index="3" data-label="7"></div>
-        <div class="slot" data-index="4" data-label="9"></div>
-        <div class="slot" data-index="5" data-label="11"></div>
-      </div>
-      <div class="strip-caption">5-slot pH test strip</div>
-    </div>
-  </div>
 
-  <div class="divider"></div>
-  <p class="info">
-    Blueberry extract acts as a natural pH indicator because it contains
-    anthocyanins, water-soluble flavonoid pigments responsible for many
-    red, purple, and blue colours found in plants. Changes in hydrogen ion
-    concentration alter the chemical structure of anthocyanins, causing
-    visible colour shifts. In acidic solutions, anthocyanins generally appear
-    red or pink, while increasing alkalinity causes purple, blue, and sometimes
-    greenish tones.
-  </p>
-  <div class="divider"></div>
+    <div class="divider"></div>
+    <p class="info">
+      Our indicator solution is a cold-steeped blend of <strong>blueberry extract</strong>,
+      <strong>red cabbage</strong>, and <strong>turmeric</strong>. Blueberries and red cabbage both
+      carry anthocyanins, pigments that shift from deep red through violet and blue as acidity drops,
+      albeit not as noticeable, due to the turmeric extract being way too powerful compared to others.
+      Turmeric contributes curcumin, which stays strong orange in acid but turns a deep red-brown once
+      a solution turns basic. Combined, the three plant extracts stretch the visible color change
+      across the full range of a 9-slot strip — dip it in, and each slot blooms into the shade that
+      matches its condition, without a single synthetic dye.
+    </p>
+  </section>
 
-  <h2 class="section-title">Red Cabbage</h2>
-  <div class="lab-area">
-    <div class="jar-wrap">
-      <div class="jar-slot">
-        <div class="jar" id="jar-cabbage">
-          <svg viewBox="0 0 70 90" xmlns="http://www.w3.org/2000/svg">
-            <rect x="10" y="18" width="50" height="62" rx="6" fill="rgba(255,255,255,0.15)" stroke="#444" stroke-width="2"/>
-            <rect x="13" y="34" width="44" height="44" rx="3" fill="#9B72CF" id="jarFluid-cabbage"/>
-            <rect x="16" y="8" width="38" height="12" rx="3" fill="#555"/>
-            <rect x="20" y="2" width="30" height="8" rx="2" fill="#333"/>
-          </svg>
+  <!-- ===================== BLUEBERRY ===================== -->
+  <section class="tab-panel" id="tab-blueberry">
+    <h2 class="section-title">Blueberry Extract</h2>
+    <div class="lab-area">
+      <div class="jar-wrap">
+        <div class="jar-slot">
+          <div class="jar" id="jar-blueberry">
+            <svg viewBox="0 0 70 90" xmlns="http://www.w3.org/2000/svg">
+              <rect x="10" y="18" width="50" height="62" rx="6" fill="rgba(255,255,255,0.15)" stroke="#444" stroke-width="2"/>
+              <rect x="13" y="34" width="44" height="44" rx="3" fill="#F2B8C6" id="jarFluid-blueberry"/>
+              <rect x="16" y="8" width="38" height="12" rx="3" fill="#555"/>
+              <rect x="20" y="2" width="30" height="8" rx="2" fill="#333"/>
+            </svg>
+          </div>
         </div>
+        <div class="jar-label">Blueberry Extract — vanilla in acid, dark red in base</div>
       </div>
-      <div class="jar-label">Red Cabbage — reddish pink in acid, baby blue in base</div>
-    </div>
-    <div>
-      <div class="strip" id="strip-cabbage">
-        <div class="slot" data-index="1" data-label="3"></div>
-        <div class="slot" data-index="2" data-label="5"></div>
-        <div class="slot" data-index="3" data-label="7"></div>
-        <div class="slot" data-index="4" data-label="9"></div>
-        <div class="slot" data-index="5" data-label="11"></div>
-      </div>
-      <div class="strip-caption">5-slot pH test strip</div>
-    </div>
-  </div>
-
-  <div class="divider"></div>
-  <p class="info">
-    Red cabbage is one of the most common natural pH indicators because it
-    contains a high concentration of anthocyanins called cyanidin derivatives.
-    These pigments respond strongly to changes in acidity, producing a wide
-    colour spectrum. Acidic conditions stabilise red forms of the pigment,
-    neutral conditions produce purple colours, and alkaline conditions shift
-    the pigment towards blue, green, and yellow-green shades.
-  </p>
-
-  <div class="divider"></div>
-
-  <h2 class="section-title">Turmeric</h2>
-  <div class="lab-area">
-    <div class="jar-wrap">
-      <div class="jar-slot">
-        <div class="jar" id="jar-turmeric">
-          <svg viewBox="0 0 70 90" xmlns="http://www.w3.org/2000/svg">
-            <rect x="10" y="18" width="50" height="62" rx="6" fill="rgba(255,255,255,0.15)" stroke="#444" stroke-width="2"/>
-            <rect x="13" y="34" width="44" height="44" rx="3" fill="#C08B1E" id="jarFluid-turmeric"/>
-            <rect x="16" y="8" width="38" height="12" rx="3" fill="#555"/>
-            <rect x="20" y="2" width="30" height="8" rx="2" fill="#333"/>
-          </svg>
+      <div>
+        <div class="strip" id="strip-blueberry">
+          <div class="slot" data-index="1" data-label="3"></div>
+          <div class="slot" data-index="2" data-label="5"></div>
+          <div class="slot" data-index="3" data-label="7"></div>
+          <div class="slot" data-index="4" data-label="9"></div>
+          <div class="slot" data-index="5" data-label="11"></div>
         </div>
+        <div class="strip-caption">5-slot pH test strip</div>
       </div>
-      <div class="jar-label">Turmeric — stays deep yellow-brown in acid, deep red-brown in base</div>
     </div>
-    <div>
-      <div class="strip" id="strip-turmeric">
-        <div class="slot" data-index="1" data-label="3"></div>
-        <div class="slot" data-index="2" data-label="7"></div>
-        <div class="slot" data-index="3" data-label="11"></div>
+
+    <div class="divider"></div>
+    <p class="info">
+      Blueberry extract acts as a natural pH indicator because it contains
+      anthocyanins, water-soluble flavonoid pigments responsible for many
+      red, purple, and blue colours found in plants. Changes in hydrogen ion
+      concentration alter the chemical structure of anthocyanins, causing
+      visible colour shifts. In acidic solutions, anthocyanins generally appear
+      red or pink, while increasing alkalinity causes purple, blue, and sometimes
+      greenish tones.
+    </p>
+  </section>
+
+  <!-- ===================== RED CABBAGE ===================== -->
+  <section class="tab-panel" id="tab-cabbage">
+    <h2 class="section-title">Red Cabbage</h2>
+    <div class="lab-area">
+      <div class="jar-wrap">
+        <div class="jar-slot">
+          <div class="jar" id="jar-cabbage">
+            <svg viewBox="0 0 70 90" xmlns="http://www.w3.org/2000/svg">
+              <rect x="10" y="18" width="50" height="62" rx="6" fill="rgba(255,255,255,0.15)" stroke="#444" stroke-width="2"/>
+              <rect x="13" y="34" width="44" height="44" rx="3" fill="#9B72CF" id="jarFluid-cabbage"/>
+              <rect x="16" y="8" width="38" height="12" rx="3" fill="#555"/>
+              <rect x="20" y="2" width="30" height="8" rx="2" fill="#333"/>
+            </svg>
+          </div>
+        </div>
+        <div class="jar-label">Red Cabbage — reddish pink in acid, baby blue in base</div>
       </div>
-      <div class="strip-caption">3-slot pH test strip</div>
+      <div>
+        <div class="strip" id="strip-cabbage">
+          <div class="slot" data-index="1" data-label="3"></div>
+          <div class="slot" data-index="2" data-label="5"></div>
+          <div class="slot" data-index="3" data-label="7"></div>
+          <div class="slot" data-index="4" data-label="9"></div>
+          <div class="slot" data-index="5" data-label="11"></div>
+        </div>
+        <div class="strip-caption">5-slot pH test strip</div>
+      </div>
     </div>
-  </div>
 
-  <div class="divider"></div>
-  <p class="info">
-    Turmeric contains curcumin, a natural polyphenolic pigment responsible
-    for its bright yellow colour. Unlike anthocyanins, curcumin does not
-    display a large colour range across the whole pH scale. Instead, it acts
-    as a selective alkaline indicator. In acidic and neutral solutions,
-    curcumin remains yellow, while strongly basic solutions cause structural
-    changes that produce orange-red to reddish-brown colours.
-  </p>
-
-  <div class="divider"></div>
-  
-  <h2 class="section-title">Recipes</h2>
-  <div class="info">
-
-    <h3>Generic Natural Indicator Extraction Method</h3>
-
-    <p>
-      1. Chop or grind the plant material into small pieces to increase
-      surface area.
+    <div class="divider"></div>
+    <p class="info">
+      Red cabbage is one of the most common natural pH indicators because it
+      contains a high concentration of anthocyanins called cyanidin derivatives.
+      These pigments respond strongly to changes in acidity, producing a wide
+      colour spectrum. Acidic conditions stabilise red forms of the pigment,
+      neutral conditions produce purple colours, and alkaline conditions shift
+      the pigment towards blue, green, and yellow-green shades.
     </p>
+  </section>
 
-    <p>
-      2. Add the material to warm distilled water and allow pigments to
-      diffuse into the solution. Avoid boiling because excessive heat can
-      degrade some plant pigments.
+  <!-- ===================== TURMERIC ===================== -->
+  <section class="tab-panel" id="tab-turmeric">
+    <h2 class="section-title">Turmeric</h2>
+    <div class="lab-area">
+      <div class="jar-wrap">
+        <div class="jar-slot">
+          <div class="jar" id="jar-turmeric">
+            <svg viewBox="0 0 70 90" xmlns="http://www.w3.org/2000/svg">
+              <rect x="10" y="18" width="50" height="62" rx="6" fill="rgba(255,255,255,0.15)" stroke="#444" stroke-width="2"/>
+              <rect x="13" y="34" width="44" height="44" rx="3" fill="#C08B1E" id="jarFluid-turmeric"/>
+              <rect x="16" y="8" width="38" height="12" rx="3" fill="#555"/>
+              <rect x="20" y="2" width="30" height="8" rx="2" fill="#333"/>
+            </svg>
+          </div>
+        </div>
+        <div class="jar-label">Turmeric — stays deep yellow-brown in acid, deep red-brown in base</div>
+      </div>
+      <div>
+        <div class="strip" id="strip-turmeric">
+          <div class="slot" data-index="1" data-label="3"></div>
+          <div class="slot" data-index="2" data-label="7"></div>
+          <div class="slot" data-index="3" data-label="11"></div>
+        </div>
+        <div class="strip-caption">3-slot pH test strip</div>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+    <p class="info">
+      Turmeric contains curcumin, a natural polyphenolic pigment responsible
+      for its bright yellow colour. Unlike anthocyanins, curcumin does not
+      display a large colour range across the whole pH scale. Instead, it acts
+      as a selective alkaline indicator. In acidic and neutral solutions,
+      curcumin remains yellow, while strongly basic solutions cause structural
+      changes that produce orange-red to reddish-brown colours.
     </p>
+  </section>
 
-    <p>
-      3. Filter the extract through filter paper or a fine cloth to remove
-      solid particles.
-    </p>
+  <!-- ===================== RECIPES ===================== -->
+  <section class="tab-panel" id="tab-recipes">
+    <h2 class="section-title">Recipes</h2>
+    <div class="info">
 
-    <p>
-      4. Store the indicator solution in a sealed container away from
-      direct sunlight to slow pigment degradation.
-    </p>
+      <h3>Generic Natural Indicator Extraction Method</h3>
 
+      <p>
+        1. Chop or grind the plant material into small pieces to increase
+        surface area.
+      </p>
 
-    <h3>Blueberry Indicator</h3>
+      <p>
+        2. Add the material to warm distilled water and allow pigments to
+        diffuse into the solution. Avoid boiling because excessive heat can
+        degrade some plant pigments.
+      </p>
 
-    <p>
-      Crush approximately 200 g of blueberries and steep in 1000 mL of warm
-      distilled water for 15–30 minutes. Filter the liquid before use.
-    </p>
+      <p>
+        3. Filter the extract through filter paper or a fine cloth to remove
+        solid particles.
+      </p>
 
-
-    <h3>Red Cabbage Indicator</h3>
-
-    <p>
-      Chop approximately 200 g of red cabbage and steep in 1000 mL of hot
-      distilled water. After the liquid becomes dark purple, filter and
-      cool before testing.
-    </p>
-
-
-    <h3>Turmeric Indicator</h3>
-
-    <p>
-      Mix 50 g of turmeric powder with 1000 mL of
-      ethanol. Filter the suspension to obtain a yellow
-      curcumin-containing indicator solution.
-    </p>
-
-  </div>  
-  <div class="divider"></div>
+      <p>
+        4. Store the indicator solution in a sealed container away from
+        direct sunlight to slow pigment degradation.
+      </p>
 
 
-  <h2 class="section-title">Scientific References</h2>
+      <h3>Blueberry Indicator</h3>
 
-  <div class="info">
+      <p>
+        Crush approximately 200 g of blueberries and steep in 1000 mL of warm
+        distilled water for 15–30 minutes. Filter the liquid before use.
+      </p>
 
-    <ol>
 
-      <li>
-        Giusti, M. M., & Wrolstad, R. E. (2001).
-        Characterization and measurement of anthocyanins by UV-visible
-        spectroscopy.
-        <em>Current Protocols in Food Analytical Chemistry.</em>
-      </li>
+      <h3>Red Cabbage Indicator</h3>
 
-      <li>
-        Khoo, H. E., Azlan, A., Tang, S. T., & Lim, S. M. (2017).
-        Anthocyanidins and anthocyanins: colored pigments as food,
-        pharmaceutical ingredients, and the potential health benefits.
-        <em>Food & Nutrition Research, 61</em>(1), 1361779.
-      </li>
+      <p>
+        Chop approximately 200 g of red cabbage and steep in 1000 mL of hot
+        distilled water. After the liquid becomes dark purple, filter and
+        cool before testing.
+      </p>
 
-      <li>
-        Pavia, D. L., Lampman, G. M., Kriz, G. S., & Engel, R. G. (2015).
-        <em>Introduction to Organic Laboratory Techniques: A Small Scale
-        Approach.</em>
-        Cengage Learning.
-      </li>
 
-      <li>
-        Priyadarsini, K. I. (2014).
-        The chemistry of curcumin: From extraction to therapeutic agent.
-        <em>Molecules, 19</em>(12), 20091–20112.
-      </li>
+      <h3>Turmeric Indicator</h3>
 
-      <li>
-        He, J., & Giusti, M. M. (2010).
-        Anthocyanins: Natural colorants with health-promoting properties.
-        <em>Annual Review of Food Science and Technology, 1</em>,
-        163–187.
-      </li>
+      <p>
+        Mix 50 g of turmeric powder with 1000 mL of
+        ethanol. Filter the suspension to obtain a yellow
+        curcumin-containing indicator solution.
+      </p>
 
-    </ol>
+    </div>
+  </section>
 
-  </div>
+  <!-- ===================== LITERATURE REVIEW ===================== -->
+  <section class="tab-panel" id="tab-litreview">
+    <h2 class="section-title">Literature Review</h2>
+    <div class="info">
+
+      <h3>Anthocyanins as pH-Responsive Pigments</h3>
+      <p>
+        Anthocyanins are flavonoid pigments whose core structure, the
+        flavylium cation, exists in several interconverting forms depending
+        on the surrounding hydrogen ion concentration. At low pH the flavylium
+        cation dominates and produces a red colour; as pH rises the molecule
+        loses protons and passes through blue quinoidal-base and colourless
+        hemiketal forms before breaking down into pale chalcone structures at
+        strongly alkaline pH. This equilibrium is what allows blueberry and
+        red cabbage extracts to sweep through red, purple, blue, and
+        eventually green or yellow-green tones across a single test strip.
+        Spectroscopic characterisation of these transitions is well
+        established in the food chemistry literature.
+      </p>
+
+      <h3>Structural Differences Between Sources</h3>
+      <p>
+        Not all anthocyanin sources behave identically. Red cabbage owes most
+        of its colour range to cyanidin derivatives, which are reported to
+        give a particularly wide and reliable spectrum from red through
+        purple to blue-green as alkalinity increases. Blueberries contain a
+        more varied mixture of anthocyanidins, which is consistent with the
+        blend used here, where the blueberry component reinforces the red and
+        pink end of the scale while the cabbage extract carries the shift
+        toward blue. Reviews of anthocyanin chemistry also note that these
+        pigments have documented antioxidant and health-related properties
+        beyond their use as indicators, which is part of why they are popular
+        in food-science teaching demonstrations.
+      </p>
+
+      <h3>Curcumin as a Selective Alkaline Indicator</h3>
+      <p>
+        Curcumin, the principal pigment in turmeric, behaves differently from
+        anthocyanins. Rather than tracking the full pH range, curcumin is
+        described in the literature as staying essentially unchanged and
+        yellow across acidic and neutral conditions, only undergoing a
+        structural change to a red-brown form once the solution becomes
+        strongly basic. This makes curcumin useful as a high-pH marker rather
+        than a general-purpose indicator, and explains why the turmeric strip
+        in this project only needs three reference slots instead of five or
+        nine.
+      </p>
+
+      <h3>Why a Blend Extends the Range</h3>
+      <p>
+        Because anthocyanins and curcumin respond to different parts of the
+        pH scale through different chemical mechanisms, combining them
+        broadens the range of visually distinct colours available on one
+        strip. This is consistent with general practice in natural-indicator
+        literature, where blends of pigment sources are used to compensate
+        for the narrower range of any single plant extract. The trade-off
+        observed in this project's own blend is that curcumin's colour is
+        strong enough to dominate the mixture, muting the finer anthocyanin
+        transitions — a practical limitation worth noting alongside the
+        theoretical advantage of blending.
+      </p>
+
+      <p class="info" style="font-size:0.85rem;color:var(--steel-dark);">
+        See the References tab for full source details (Giusti & Wrolstad,
+        2001; Khoo et al., 2017; Pavia et al., 2015; Priyadarsini, 2014;
+        He & Giusti, 2010).
+      </p>
+
+    </div>
+  </section>
+
+  <!-- ===================== RESULTS ===================== -->
+  <section class="tab-panel" id="tab-results">
+    <h2 class="section-title">Results</h2>
+    <div class="info">
+      <p>
+        Photos from testing the extracts, comparing extract colour at
+        different stages and against unknown-sample beakers.
+      </p>
+    </div>
+    <div class="gallery">
+      <figure class="gallery-item">
+        <img src="Blyat/Red_Cabbage_1.jpg" alt="Three bowls of extract on a stove: pale green, dark red-purple, and bright red">
+        <figcaption>Filtered extracts side by side — cabbage extract (centre) and a comparison mix</figcaption>
+      </figure>
+      <figure class="gallery-item">
+        <img src="Blyat/Turmeric_1.jpg" alt="Six labelled beakers of pale amber liquid samples">
+        <figcaption>Unknown test samples A–F prepared for indicator comparison</figcaption>
+      </figure>
+      <figure class="gallery-item">
+        <img src="Blyat/Blueberry.jpg" alt="Small bowl of pink liquid next to a cup of white powder">
+        <figcaption>Blueberry-derived extract turning pink on contact with an acidic reagent</figcaption>
+      </figure>
+      <figure class="gallery-item">
+        <img src="Blyat/Red_Cabbage_2.jpg" alt="White bowl with a pale blue patch of liquid forming">
+        <figcaption>Red cabbage extract shifting toward blue under alkaline conditions</figcaption>
+      </figure>
+      <figure class="gallery-item">
+        <img src="Blyat/Turmeric_2.jpg" alt="Metal bowl of bright yellow-green turmeric liquid">
+        <figcaption>Fresh turmeric extract, bright yellow in neutral/acidic conditions</figcaption>
+      </figure>
+      <figure class="gallery-item">
+        <img src="Blyat/Final_Mix.jpg" alt="Metal bowl of deep amber-orange liquid">
+        <figcaption>Final blended indicator, deep amber before dilution and strip testing</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ===================== REFERENCES ===================== -->
+  <section class="tab-panel" id="tab-references">
+    <h2 class="section-title">Scientific References</h2>
+    <div class="info">
+      <ol>
+        <li>
+          Giusti, M. M., & Wrolstad, R. E. (2001).
+          Characterization and measurement of anthocyanins by UV-visible
+          spectroscopy.
+          <em>Current Protocols in Food Analytical Chemistry.</em>
+        </li>
+
+        <li>
+          Khoo, H. E., Azlan, A., Tang, S. T., & Lim, S. M. (2017).
+          Anthocyanidins and anthocyanins: colored pigments as food,
+          pharmaceutical ingredients, and the potential health benefits.
+          <em>Food & Nutrition Research, 61</em>(1), 1361779.
+        </li>
+
+        <li>
+          Pavia, D. L., Lampman, G. M., Kriz, G. S., & Engel, R. G. (2015).
+          <em>Introduction to Organic Laboratory Techniques: A Small Scale
+          Approach.</em>
+          Cengage Learning.
+        </li>
+
+        <li>
+          Priyadarsini, K. I. (2014).
+          The chemistry of curcumin: From extraction to therapeutic agent.
+          <em>Molecules, 19</em>(12), 20091–20112.
+        </li>
+
+        <li>
+          He, J., & Giusti, M. M. (2010).
+          Anthocyanins: Natural colorants with health-promoting properties.
+          <em>Annual Review of Food Science and Technology, 1</em>,
+          163–187.
+        </li>
+      </ol>
+    </div>
+  </section>
+
 </main>
 <footer>pHmetall Industries</footer>
 <script src="script.js"></script>
