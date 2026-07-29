@@ -60,7 +60,7 @@
       // Turmeric: deep yellow-brown (acid, stays put) -> deep red-brown (base)
       colors: {
         1: "#C08B1E",
-        2: "#8E5B1F",
+        2: "#C08B1E",
         3: "#5C2A1F"
       }
     }
