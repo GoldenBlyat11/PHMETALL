@@ -35,11 +35,11 @@
       stripId: "strip-blueberry",
       // Blueberry extract: vanilla (acid) -> dark red (base)
       colors: {
-        1: "#F3E2B3",
-        2: "#D5B18E",
-        3: "#B78169",
-        4: "#985044",
-        5: "#7A1F1F"
+        1: "#FF1A75",
+        2: "#FF4A80",
+        3: "#FFB080",
+        4: "#D8FF80",
+        5: "#AAFF80"
       }
     },
     {
